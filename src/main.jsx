@@ -9,6 +9,9 @@ import {
 } from "react-router-dom";
 import Root from './components/Root.jsx';
 import Registration from './components/Registration.jsx';
+import Login from './components/Login.jsx';
+import Course from './components/Course.jsx';
+import FetchDisplay from './components/FetchDisplay.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,8 +23,18 @@ const router = createBrowserRouter([
         element: <Registration></Registration>
       },
       {
-        
+        path: "/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/course",
+        element: <Course></Course>
+      },
+      {
+        path: "/fetchDisplay",
+        element: <FetchDisplay></FetchDisplay>
       }
+
     ]
   },
 ]);
