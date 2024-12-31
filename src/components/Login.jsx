@@ -21,8 +21,8 @@ const Login = () => {
                 body: JSON.stringify(credentials),
             });
             const data = await res.json();
-            localStorage.setItem('token', data.token);
             console.log(data);
+            localStorage.setItem('token', data.token);
             toast.success('Login Successful');
         } catch (error) {
             toast.error('Error. Password must be 8+ characters.')
