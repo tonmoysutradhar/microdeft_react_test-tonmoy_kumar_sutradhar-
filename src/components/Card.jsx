@@ -8,10 +8,10 @@ const Card = ({ card }) => {
   return (
     <div>
       <div className="relative card border rounded-xl bg-purple-50 shadow-xl">
-        <figure className="">
+        <figure className="relative">
           <img className="w-full" src={image} alt="" />
+            <p className="absolute bottom-1 left-1 p-2 bg-red-400 rounded-sm">{badge_color}</p>
         </figure>
-        <p className="absolute bottom-36 left-2 p-2 bg-red-400 rounded-sm">{badge_color}</p>
         <div className="px-5 pb-5 ">
           <div className="flex items-center justify-center gap-2">
             <CgProfile></CgProfile>
