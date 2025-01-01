@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="navbar justify-center gap-2 bg-base-100">
             
             <div className="">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 gap-3">
                     <li><NavLink to="/">Registration From</NavLink></li>
                     <li><NavLink to="/login">Login From</NavLink></li>
                     <li><NavLink to="/course">Course From</NavLink></li>

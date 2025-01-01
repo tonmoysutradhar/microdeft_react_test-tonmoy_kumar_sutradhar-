@@ -34,6 +34,8 @@ const Registration = () => {
       }
     } 
     catch (error) {
+      console.log(error);
+      
       toast.error('This email is already registered. Please use a different email.');
       return;
     }

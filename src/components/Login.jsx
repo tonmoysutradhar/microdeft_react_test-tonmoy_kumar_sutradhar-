@@ -11,6 +11,10 @@ const Login = () => {
 
     const handleLogin = async (e)=> {
         e.preventDefault();
+        if (credentials.password.length < 8) {
+              toast.error("Password must be at least 8 characters long.");
+              return;
+        }
 
         try {
             const res = await fetch('https://react-interview.crd4lc.easypanel.host/api/login', {
@@ -22,10 +26,10 @@ const Login = () => {
             });
             const data = await res.json();
             console.log(data);
-            localStorage.setItem('token', data.token);
+            localStorage.setItem('token', data.data.token);
             toast.success('Login Successful');
         } catch (error) {
-            toast.error('Error. Password must be 8+ characters.')
+            toast.error('Please use a registered email to log in.')
             return ;
         }
 
