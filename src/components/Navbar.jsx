@@ -7,10 +7,10 @@ const Navbar = () => {
             
             <div className="">
                 <ul className="menu menu-horizontal px-1 gap-3">
-                    <li><NavLink to="/">Registration From</NavLink></li>
-                    <li><NavLink to="/login">Login From</NavLink></li>
-                    <li><NavLink to="/course">Course From</NavLink></li>
-                    <li><NavLink to="/fetchDisplay">Fetch and Display</NavLink></li>
+                    <li><NavLink to="/">1.Registration From</NavLink></li>
+                    <li><NavLink to="/login">2.Login From</NavLink></li>
+                    <li><NavLink to="/course">3.Course From</NavLink></li>
+                    <li><NavLink to="/fetchDisplay">4.Fetch and Display</NavLink></li>
                 </ul>
             </div>
         </div>
